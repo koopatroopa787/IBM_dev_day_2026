@@ -107,21 +107,6 @@ Check system status
   "timestamp": "2026-01-31T20:00:00.000Z"
 }
 ```
-
-## Configuration
-
-Credentials are pre-configured in `server.js`:
-
-```javascript
-const CONFIG = {
-    IAM_API_KEY: "ApiKey-baa61d53-01ba-4674-badf-bed5563cbdbc",
-    SERVICE_URL: "https://api.ca-tor.watson-orchestrate.cloud.ibm.com/...",
-    AGENT_ID: "5f4ace24-c16e-42e1-9df2-ce949f96683f"
-};
-```
-
-**⚠️ Security**: Never commit `server.js` to public repositories. Add to `.gitignore`.
-
 ## Project Structure
 
 ```
