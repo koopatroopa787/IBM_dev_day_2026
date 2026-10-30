@@ -779,6 +779,10 @@ Please coordinate with all specialist agents (Triage, Diagnostic, Knowledge, Coo
 
                 const data = await response.json();
 
+                if (!response.ok) {
+                    throw new Error(data.error || `Request failed (${response.status})`);
+                }
+
                 if (data.session_id) {
                     sessionId = data.session_id;
                 }
